@@ -1,4 +1,4 @@
-﻿Public Class Form2
+Public Class Form2
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Sign Up"
     End Sub
@@ -26,7 +26,7 @@
             Return
         End If
 
-        If CsvHelper.RegisterUser(firstName, lastName, email, password) Then
+        If CSVHelper.RegisterUser(firstName, lastName, email, password) Then
             MessageBox.Show("Account created successfully!")
             txtFirstName.Clear()
             txtLastName.Clear()
