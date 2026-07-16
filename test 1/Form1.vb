@@ -1,4 +1,4 @@
-﻿Public Class Form1
+Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Login"
     End Sub
@@ -12,7 +12,7 @@
             Return
         End If
 
-        If CsvHelper.AuthenticateUser(userEmail, userPassword) Then
+        If CSVHelper.AuthenticateUser(userEmail, userPassword) Then
             MessageBox.Show("Login successful!")
             GlobalVariables.LoggedInUser = userEmail
             txtEmail.Clear()
